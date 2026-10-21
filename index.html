@@ -1,0 +1,1694 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EduSmart.com - Platform belajar online dengan tutor AI dan mentor ahli.">
+  <title>EduSmart.com | Belajar Lebih Cerdas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="#beranda" class="logo">Edu<span>Smart</span></a>
+      <nav class="menu" id="menu">
+        <a href="#beranda">
+          Beranda
+        </a>
+        <a href="#kategori">
+          Kategori
+        </a>
+        <a href="#kursus">
+          Kursus
+        </a>
+        <a href="#fitur">
+          Fitur
+        </a>
+        <a href="#mentor">
+          Mentor
+        </a>
+        <a href="#faq">
+          FAQ
+        </a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeBtn" aria-label="Ganti tema">
+          🌙
+        </button>
+        <button class="btn ghost small" id="authBtn">
+          Masuk
+        </button>
+        <span id="previewWarn" style="display:none;font-size:.72rem;color:#dc2626;margin-left:6px">
+          ⚠️ Mode pratinjau
+        </span>
+        <button class="icon-btn burger" id="burger" aria-label="Menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" id="beranda">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">
+          🚀 Platform Belajar #1 Indonesia
+        </span>
+        <h1>Belajar Lebih <em>Cerdas</em>, Raih Masa Depan Lebih Cerah</h1>
+        <p>
+          Ribuan materi, tutor AI, dan mentor berpengalaman siap menemani perjalanan belajarmu kapan saja dan di mana saja.
+        </p>
+        <div class="hero-cta">
+          <a href="#kursus" class="btn">
+            Mulai Belajar
+          </a>
+          <a href="#kursus" class="btn ghost">
+            Lihat Kursus
+          </a>
+        </div>
+        <div class="search">
+          <input type="search" id="q" placeholder="Cari kursus, misalnya: Python">
+          <button id="searchBtn">
+            Cari
+          </button>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-emoji">
+          🎓
+        </div>
+        <h3 id="greet">
+          Progres Belajarmu
+        </h3>
+        <div class="progress">
+          <i>
+          </i>
+        </div>
+        <p>Kursus yang kamu ikuti: <span id="startedCount">0</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="container stats-grid">
+      <div class="stat">
+        <strong>
+          250rb+
+        </strong>
+        <span>
+          Pelajar Aktif
+        </span>
+      </div>
+      <div class="stat">
+        <strong>
+          1.200+
+        </strong>
+        <span>
+          Materi & Kursus
+        </span>
+      </div>
+      <div class="stat">
+        <strong>
+          85+
+        </strong>
+        <span>
+          Mentor Ahli
+        </span>
+      </div>
+      <div class="stat">
+        <strong>
+          4,8/5
+        </strong>
+        <span>
+          Rating Pengguna
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <section id="kategori">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">
+          Kategori
+        </span>
+        <h2>
+          Jelajahi Bidang Belajar
+        </h2>
+        <p>
+          Pilih topik yang kamu minati lalu temukan kursus terbaik.
+        </p>
+      </div>
+      <div class="grid-4">
+        <div class="cat" data-cat="Matematika">
+          <span class="ico">
+            🧮
+          </span>
+          <h3>
+            Matematika
+          </h3>
+        </div>
+        <div class="cat" data-cat="Sains">
+          <span class="ico">
+            🔬
+          </span>
+          <h3>
+            Sains
+          </h3>
+        </div>
+        <div class="cat" data-cat="Bahasa Inggris">
+          <span class="ico">
+            🗣️
+          </span>
+          <h3>
+            Bahasa Inggris
+          </h3>
+        </div>
+        <div class="cat" data-cat="Pemrograman">
+          <span class="ico">
+            💻
+          </span>
+          <h3>
+            Pemrograman
+          </h3>
+        </div>
+        <div class="cat" data-cat="Desain">
+          <span class="ico">
+            🎨
+          </span>
+          <h3>
+            Desain
+          </h3>
+        </div>
+        <div class="cat" data-cat="Bisnis">
+          <span class="ico">
+            📈
+          </span>
+          <h3>
+            Bisnis
+          </h3>
+        </div>
+        <div class="cat" data-cat="Musik">
+          <span class="ico">
+            🎵
+          </span>
+          <h3>
+            Musik
+          </h3>
+        </div>
+        <div class="cat" data-cat="Persiapan Ujian">
+          <span class="ico">
+            📝
+          </span>
+          <h3>
+            Persiapan Ujian
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kursus" class="alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">
+          Kursus Populer
+        </span>
+        <h2>
+          Pilih Kursus Favoritmu
+        </h2>
+        <p>
+          Dirancang oleh pakar dan diperbarui secara berkala.
+        </p>
+      </div>
+      <div class="grid-4">
+        <article class="course" data-cat="Matematika">
+          <div class="thumb">
+            🧮
+          </div>
+          <div class="body">
+            <span class="tag">
+              Matematika
+            </span>
+            <h3>
+              Aljabar Dasar untuk Pemula
+            </h3>
+            <p>
+              Pahami variabel, persamaan, dan fungsi dengan contoh sehari-hari.
+            </p>
+            <ul class="meta">
+              <li>
+                📶 Pemula
+              </li>
+              <li>
+                ⏳ 8 jam
+              </li>
+              <li>
+                ⭐ 4,8
+              </li>
+            </ul>
+            <div class="foot">
+              <button class="btn small enroll block" data-title="Aljabar Dasar untuk Pemula">
+                Mulai Belajar
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="course" data-cat="Matematika">
+          <div class="thumb">
+            📐
+          </div>
+          <div class="body">
+            <span class="tag">
+              Matematika
+            </span>
+            <h3>
+              Kalkulus Visual
+            </h3>
+            <p>
+              Limit, turunan, dan integral dijelaskan lewat animasi interaktif.
+            </p>
+            <ul class="meta">
+              <li>
+                📶 Menengah
+              </li>
+              <li>
+                ⏳ 14 jam
+              </li>
+              <li>
+                ⭐ 4,9
+              </li>
+            </ul>
+            <div class="foot">
+              <button class="btn small enroll block" data-title="Kalkulus Visual">
+                Mulai Belajar
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="course" data-cat="Sains">
+          <div class="thumb">
+            ⚛️
+          </div>
+          <div class="body">
+            <span class="tag">
+              Sains
+            </span>
+            <h3>
+              Fisika Dasar SMA
+            </h3>
+            <p>
+              Gerak, gaya, energi, dan listrik dengan eksperimen virtual.
+            </p>
+            <ul class="meta">
+              <li>
+                📶 Pemula
+              </li>
+              <li>
+                ⏳ 12 jam
+              </li>
+              <li>
+                ⭐ 4,7
+              </li>
+            </ul>
+            <div class="foot">
+              <button class="btn small enroll block" data-title="Fisika Dasar SMA">
+                Mulai Belajar
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="course" data-cat="Sains">
+          <div class="thumb">
+            🧪
+          </div>
+          <div class="body">
+            <span class="tag">
+              Sains
+            </span>
+            <h3>
+              Kimia Organik Ringkas
+            </h3>
+            <p>
+              Gugus fungsi dan reaksi penting tanpa hafalan berlebihan.
+            </p>
+            <ul class="meta">
+              <li>
+                📶 Menengah
+              </li>
+              <li>
+                ⏳ 10 jam
+              </li>
+              <li>
+                ⭐ 4,6
+              </li>
+            </ul>
+            <div class="foot">
+              <button class="btn small enroll block" data-title="Kimia Organik Ringkas">
+                Mulai Belajar
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="course" data-cat="Bahasa Inggris">
+          <div class="thumb">
+            💬
+          </div>
+          <div class="body">
+            <span class="tag">
+              Bahasa Inggris
+            </span>
+            <h3>
+              English for Daily Life
+            </h3>
+            <p>
+              Percakapan praktis untuk belanja, kerja, dan perjalanan.
+            </p>
+            <ul class="meta">
+              <li>
+                📶 Pemula
+              </li>
+              <li>
+                ⏳ 9 jam
+              </li>
+              <li>
+                ⭐ 4,8
+              </li>
+            </ul>
+            <div class="foot">
+              <button class="btn small enroll block" data-title="English for Daily Life">
+                Mulai Belajar
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="course" data-cat="Bahasa Inggris">
+          <div class="thumb">
+            🎧
+          </div>
+          <div class="body">
+            <span class="tag">
+              Bahasa Inggris
+            </span>
+            <h3>
+              Persiapan IELTS Academic
+            </h3>
+            <p>
+              Strategi Listening, Reading, Writing, dan Speaking.
+            </p>
+            <ul class="meta">
+              <li>
+                📶 Lanjutan
+              </li>
+              <li>
+                ⏳ 20 jam
+              </li>
+              <li>
+                ⭐ 4,9
+              </li>
+            </ul>
+            <div class="foot">
+              <button class="btn small enroll block" data-title="Persiapan IELTS Academic">
+                Mulai Belajar
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="course" data-cat="Pemrograman">
+          <div class="thumb">
+            🐍
+          </div>
+          <div class="body">
+            <span class="tag">
+              Pemrograman
+            </span>
+            <h3>
+              Python dari Nol
+            </h3>
+            <p>
+              Belajar logika pemrograman dan membuat 5 proyek kecil.
+            </p>
+            <ul class="meta">
+              <li>
+                📶 Pemula
+              </li>
+              <li>
+                ⏳ 16 jam
+              </li>
+              <li>
+                ⭐ 4,9
+              </li>
+            </ul>
+            <div class="foot">
+              <button class="btn small enroll block" data-title="Python dari Nol">
+                Mulai Belajar
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="course" data-cat="Pemrograman">
+          <div class="thumb">
+            🌐
+          </div>
+          <div class="body">
+            <span class="tag">
+              Pemrograman
+            </span>
+            <h3>
+              Web Development Modern
+            </h3>
+            <p>
+              HTML, CSS, JavaScript, hingga deploy situs pertamamu.
+            </p>
+            <ul class="meta">
+              <li>
+                📶 Menengah
+              </li>
+              <li>
+                ⏳ 24 jam
+              </li>
+              <li>
+                ⭐ 4,8
+              </li>
+            </ul>
+            <div class="foot">
+              <button class="btn small enroll block" data-title="Web Development Modern">
+                Mulai Belajar
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="course" data-cat="Desain">
+          <div class="thumb">
+            🎨
+          </div>
+          <div class="body">
+            <span class="tag">
+              Desain
+            </span>
+            <h3>
+              UI/UX Design Fundamental
+            </h3>
+            <p>
+              Riset pengguna, wireframe, dan prototipe di Figma.
+            </p>
+            <ul class="meta">
+              <li>
+                📶 Pemula
+              </li>
+              <li>
+                ⏳ 11 jam
+              </li>
+              <li>
+                ⭐ 4,7
+              </li>
+            </ul>
+            <div class="foot">
+              <button class="btn small enroll block" data-title="UI/UX Design Fundamental">
+                Mulai Belajar
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="course" data-cat="Desain">
+          <div class="thumb">
+            🖌️
+          </div>
+          <div class="body">
+            <span class="tag">
+              Desain
+            </span>
+            <h3>
+              Desain Grafis dengan Canva
+            </h3>
+            <p>
+              Buat poster, logo, dan konten media sosial profesional.
+            </p>
+            <ul class="meta">
+              <li>
+                📶 Pemula
+              </li>
+              <li>
+                ⏳ 6 jam
+              </li>
+              <li>
+                ⭐ 4,6
+              </li>
+            </ul>
+            <div class="foot">
+              <button class="btn small enroll block" data-title="Desain Grafis dengan Canva">
+                Mulai Belajar
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="course" data-cat="Bisnis">
+          <div class="thumb">
+            🚀
+          </div>
+          <div class="body">
+            <span class="tag">
+              Bisnis
+            </span>
+            <h3>
+              Dasar Kewirausahaan
+            </h3>
+            <p>
+              Dari ide, validasi pasar, hingga rencana bisnis sederhana.
+            </p>
+            <ul class="meta">
+              <li>
+                📶 Pemula
+              </li>
+              <li>
+                ⏳ 7 jam
+              </li>
+              <li>
+                ⭐ 4,7
+              </li>
+            </ul>
+            <div class="foot">
+              <button class="btn small enroll block" data-title="Dasar Kewirausahaan">
+                Mulai Belajar
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="course" data-cat="Bisnis">
+          <div class="thumb">
+            📊
+          </div>
+          <div class="body">
+            <span class="tag">
+              Bisnis
+            </span>
+            <h3>
+              Akuntansi untuk UMKM
+            </h3>
+            <p>
+              Catat arus kas dan baca laporan keuangan dengan percaya diri.
+            </p>
+            <ul class="meta">
+              <li>
+                📶 Menengah
+              </li>
+              <li>
+                ⏳ 9 jam
+              </li>
+              <li>
+                ⭐ 4,8
+              </li>
+            </ul>
+            <div class="foot">
+              <button class="btn small enroll block" data-title="Akuntansi untuk UMKM">
+                Mulai Belajar
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="course" data-cat="Musik">
+          <div class="thumb">
+            🎸
+          </div>
+          <div class="body">
+            <span class="tag">
+              Musik
+            </span>
+            <h3>
+              Gitar Akustik Pemula
+            </h3>
+            <p>
+              Kunci dasar, strumming, dan lagu pertamamu dalam 2 minggu.
+            </p>
+            <ul class="meta">
+              <li>
+                📶 Pemula
+              </li>
+              <li>
+                ⏳ 8 jam
+              </li>
+              <li>
+                ⭐ 4,8
+              </li>
+            </ul>
+            <div class="foot">
+              <button class="btn small enroll block" data-title="Gitar Akustik Pemula">
+                Mulai Belajar
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="course" data-cat="Musik">
+          <div class="thumb">
+            🎼
+          </div>
+          <div class="body">
+            <span class="tag">
+              Musik
+            </span>
+            <h3>
+              Teori Musik Praktis
+            </h3>
+            <p>
+              Not, tangga nada, dan harmoni untuk semua instrumen.
+            </p>
+            <ul class="meta">
+              <li>
+                📶 Menengah
+              </li>
+              <li>
+                ⏳ 6 jam
+              </li>
+              <li>
+                ⭐ 4,6
+              </li>
+            </ul>
+            <div class="foot">
+              <button class="btn small enroll block" data-title="Teori Musik Praktis">
+                Mulai Belajar
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="course" data-cat="Persiapan Ujian">
+          <div class="thumb">
+            🎯
+          </div>
+          <div class="body">
+            <span class="tag">
+              Persiapan Ujian
+            </span>
+            <h3>
+              Intensif UTBK-SNBT
+            </h3>
+            <p>
+              Latihan soal TPS, literasi, dan penalaran dengan pembahasan.
+            </p>
+            <ul class="meta">
+              <li>
+                📶 Lanjutan
+              </li>
+              <li>
+                ⏳ 30 jam
+              </li>
+              <li>
+                ⭐ 4,9
+              </li>
+            </ul>
+            <div class="foot">
+              <button class="btn small enroll block" data-title="Intensif UTBK-SNBT">
+                Mulai Belajar
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="course" data-cat="Persiapan Ujian">
+          <div class="thumb">
+            ⏱️
+          </div>
+          <div class="body">
+            <span class="tag">
+              Persiapan Ujian
+            </span>
+            <h3>
+              Try Out Nasional Bulanan
+            </h3>
+            <p>
+              Simulasi ujian dengan peringkat nasional dan analisis nilai.
+            </p>
+            <ul class="meta">
+              <li>
+                📶 Semua
+              </li>
+              <li>
+                ⏳ 3 jam
+              </li>
+              <li>
+                ⭐ 4,7
+              </li>
+            </ul>
+            <div class="foot">
+              <button class="btn small enroll block" data-title="Try Out Nasional Bulanan">
+                Mulai Belajar
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+      <p id="empty" style="display:none;text-align:center;margin-top:24px">
+        Tidak ada kursus yang cocok. Coba kata kunci lain.
+      </p>
+    </div>
+  </section>
+
+  <section id="fitur">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">
+          Fitur
+        </span>
+        <h2>
+          Kenapa Memilih EduSmart?
+        </h2>
+        <p>
+          Teknologi modern untuk pengalaman belajar yang menyenangkan.
+        </p>
+      </div>
+      <div class="grid-3">
+        <div class="feature">
+          <span class="ico">
+            🤖
+          </span>
+          <h3>
+            Tutor AI 24 Jam
+          </h3>
+          <p>
+            Tanya apa saja kapan saja dan dapatkan penjelasan bertahap yang sesuai levelmu.
+          </p>
+        </div>
+        <div class="feature">
+          <span class="ico">
+            🧭
+          </span>
+          <h3>
+            Jalur Belajar Personal
+          </h3>
+          <p>
+            Kurikulum menyesuaikan kecepatan dan tujuanmu berdasarkan hasil diagnostik.
+          </p>
+        </div>
+        <div class="feature">
+          <span class="ico">
+            🎮
+          </span>
+          <h3>
+            Gamifikasi
+          </h3>
+          <p>
+            Kumpulkan XP, lencana, dan streak harian agar belajar terasa seperti bermain.
+          </p>
+        </div>
+        <div class="feature">
+          <span class="ico">
+            📱
+          </span>
+          <h3>
+            Belajar Offline
+          </h3>
+          <p>
+            Unduh materi dan tonton video tanpa internet, cocok untuk daerah sinyal lemah.
+          </p>
+        </div>
+        <div class="feature">
+          <span class="ico">
+            👥
+          </span>
+          <h3>
+            Komunitas Aktif
+          </h3>
+          <p>
+            Diskusi, grup belajar, dan sesi tanya jawab langsung bersama mentor.
+          </p>
+        </div>
+        <div class="feature">
+          <span class="ico">
+            🏅
+          </span>
+          <h3>
+            Sertifikat Resmi
+          </h3>
+          <p>
+            Dapatkan sertifikat digital yang bisa dibagikan ke LinkedIn dan CV.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">
+          Cara Kerja
+        </span>
+        <h2>
+          Mulai dalam 4 Langkah Mudah
+        </h2>
+        <p>
+          Tanpa ribet, langsung belajar.
+        </p>
+      </div>
+      <div class="grid-4">
+        <div class="step">
+          <b>
+            1
+          </b>
+          <h3>
+            Pilih Kursus
+          </h3>
+          <p>
+            Temukan topik yang kamu minati dalam 1 menit.
+          </p>
+        </div>
+        <div class="step">
+          <b>
+            2
+          </b>
+          <h3>
+            Tes Diagnostik
+          </h3>
+          <p>
+            Ketahui level dan kebutuhan belajarmu.
+          </p>
+        </div>
+        <div class="step">
+          <b>
+            3
+          </b>
+          <h3>
+            Ikuti Jalur Belajar
+          </h3>
+          <p>
+            Selesaikan modul, kuis, dan proyek.
+          </p>
+        </div>
+        <div class="step">
+          <b>
+            4
+          </b>
+          <h3>
+            Raih Sertifikat
+          </h3>
+          <p>
+            Bagikan pencapaianmu ke dunia.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mentor">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">
+          Mentor
+        </span>
+        <h2>
+          Belajar dari Ahlinya
+        </h2>
+        <p>
+          Dipandu praktisi dan akademisi berpengalaman.
+        </p>
+      </div>
+      <div class="grid-3">
+        <div class="teacher">
+          <div class="avatar">
+            RK
+          </div>
+          <h3>
+            Dr. Rina Kusuma
+          </h3>
+          <small>
+            Matematika
+          </small>
+          <p>
+            15 tahun mengajar, alumnus ITB.
+          </p>
+        </div>
+        <div class="teacher">
+          <div class="avatar">
+            BS
+          </div>
+          <h3>
+            Budi Santoso, M.Sc.
+          </h3>
+          <small>
+            Fisika
+          </small>
+          <p>
+            Peneliti dan penulis buku olimpiade sains.
+          </p>
+        </div>
+        <div class="teacher">
+          <div class="avatar">
+            SW
+          </div>
+          <h3>
+            Sarah Wijaya
+          </h3>
+          <small>
+            Bahasa Inggris
+          </small>
+          <p>
+            Bersertifikat CELTA dengan skor IELTS 8,5.
+          </p>
+        </div>
+        <div class="teacher">
+          <div class="avatar">
+            AP
+          </div>
+          <h3>
+            Andi Pratama
+          </h3>
+          <small>
+            Pemrograman
+          </small>
+          <p>
+            Software engineer dengan pengalaman 10 tahun.
+          </p>
+        </div>
+        <div class="teacher">
+          <div class="avatar">
+            ML
+          </div>
+          <h3>
+            Maya Lestari
+          </h3>
+          <small>
+            Desain
+          </small>
+          <p>
+            Senior product designer di startup unicorn.
+          </p>
+        </div>
+        <div class="teacher">
+          <div class="avatar">
+            RR
+          </div>
+          <h3>
+            Rizky Ramadhan
+          </h3>
+          <small>
+            Bisnis
+          </small>
+          <p>
+            Founder tiga usaha rintisan dan mentor UMKM.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">
+          Jadwal
+        </span>
+        <h2>
+          Kelas Live Mingguan
+        </h2>
+        <p>
+          Gabung sesi interaktif bersama mentor secara langsung.
+        </p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>
+                Hari
+              </th>
+              <th>
+                Jam (WIB)
+              </th>
+              <th>
+                Kelas
+              </th>
+              <th>
+                Mentor
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Senin
+              </td>
+              <td>
+                19.00
+              </td>
+              <td>
+                Kelas Live Matematika
+              </td>
+              <td>
+                Dr. Rina
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Selasa
+              </td>
+              <td>
+                19.30
+              </td>
+              <td>
+                Speaking Club Inggris
+              </td>
+              <td>
+                Sarah
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Rabu
+              </td>
+              <td>
+                20.00
+              </td>
+              <td>
+                Coding Bareng Python
+              </td>
+              <td>
+                Andi
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Kamis
+              </td>
+              <td>
+                19.00
+              </td>
+              <td>
+                Klinik Fisika
+              </td>
+              <td>
+                Budi
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Jumat
+              </td>
+              <td>
+                19.30
+              </td>
+              <td>
+                Workshop UI/UX
+              </td>
+              <td>
+                Maya
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Sabtu
+              </td>
+              <td>
+                10.00
+              </td>
+              <td>
+                Try Out UTBK Live
+              </td>
+              <td>
+                Tim Mentor
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">
+          Coba Sekarang
+        </span>
+        <h2>
+          Kuis Cepat
+        </h2>
+        <p>
+          Uji kemampuanmu dengan satu soal singkat.
+        </p>
+      </div>
+      <div class="quiz-box" id="quiz" data-answer="1">
+        <h3>
+          Berapakah hasil dari 3x + 5 = 20, nilai x?
+        </h3>
+        <button class="opt">
+          x = 3
+        </button>
+        <button class="opt">
+          x = 5
+        </button>
+        <button class="opt">
+          x = 8
+        </button>
+        <button class="opt">
+          x = 15
+        </button>
+        <p id="quizMsg">
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">
+          Testimoni
+        </span>
+        <h2>
+          Kata Mereka tentang EduSmart
+        </h2>
+        <p>
+          Cerita nyata dari pelajar di seluruh Indonesia.
+        </p>
+      </div>
+      <div class="grid-3">
+        <blockquote class="review">
+          <div class="stars">
+            ★★★★★
+          </div>
+          <p>
+            “Latihan UTBK-nya sangat mirip aslinya. Nilai try out saya naik 120 poin dalam sebulan!”
+          </p>
+          <cite>
+            — Nadia, SMA Kelas 12
+          </cite>
+        </blockquote>
+        <blockquote class="review">
+          <div class="stars">
+            ★★★★★
+          </div>
+          <p>
+            “Kelas Python-nya runtut dan mudah diikuti. Sekarang saya sudah magang sebagai developer.”
+          </p>
+          <cite>
+            — Fajar, Mahasiswa
+          </cite>
+        </blockquote>
+        <blockquote class="review">
+          <div class="stars">
+            ★★★★★
+          </div>
+          <p>
+            “Belajar akuntansi sederhana membuat usaha saya lebih tertata dan untung terlihat jelas.”
+          </p>
+          <cite>
+            — Ibu Lestari, Pemilik Warung
+          </cite>
+        </blockquote>
+        <blockquote class="review">
+          <div class="stars">
+            ★★★★★
+          </div>
+          <p>
+            “Saya belajar IELTS sambil kerja karena bisa diakses kapan saja lewat ponsel.”
+          </p>
+          <cite>
+            — Kevin, Karyawan
+          </cite>
+        </blockquote>
+        <blockquote class="review">
+          <div class="stars">
+            ★★★★★
+          </div>
+          <p>
+            “Tutor AI membantu saya menyiapkan materi dan soal latihan untuk murid-murid.”
+          </p>
+          <cite>
+            — Putri, Guru SD
+          </cite>
+        </blockquote>
+        <blockquote class="review">
+          <div class="stars">
+            ★★★★★
+          </div>
+          <p>
+            “Kursus UI/UX membuka jalan ke klien pertama saya dalam dua bulan.”
+          </p>
+          <cite>
+            — Dimas, Freelancer
+          </cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">
+          FAQ
+        </span>
+        <h2>
+          Pertanyaan yang Sering Diajukan
+        </h2>
+        <p>
+          Belum menemukan jawaban? Hubungi tim kami.
+        </p>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>
+            Apakah EduSmart cocok untuk pemula?
+          </summary>
+          <p>
+            Ya. Setiap kursus punya level yang jelas dan tes diagnostik singkat membantu menentukan titik awal belajarmu.
+          </p>
+        </details>
+        <details>
+          <summary>
+            Apakah saya perlu mendaftar akun?
+          </summary>
+          <p>
+            Tidak wajib. Kamu bisa langsung membuka kursus dan progresmu tersimpan di perangkat.
+          </p>
+        </details>
+        <details>
+          <summary>
+            Bisakah saya belajar lewat ponsel?
+          </summary>
+          <p>
+            Tentu. Situs responsif dan aplikasi mendukung unduhan materi untuk belajar offline.
+          </p>
+        </details>
+        <details>
+          <summary>
+            Apakah progres belajar saya tersimpan?
+          </summary>
+          <p>
+            Ya, progres tersimpan otomatis di browser perangkatmu.
+          </p>
+        </details>
+        <details>
+          <summary>
+            Berapa lama akses kursus berlaku?
+          </summary>
+          <p>
+            Seumur hidup. Kamu bisa kembali ke kursus kapan saja.
+          </p>
+        </details>
+        <details>
+          <summary>
+            Apakah sertifikatnya diakui?
+          </summary>
+          <p>
+            Sertifikat bersifat kompetensi digital dan dilengkapi kode verifikasi untuk perekrut.
+          </p>
+        </details>
+        <details>
+          <summary>
+            Bagaimana jika saya butuh bantuan mentor?
+          </summary>
+          <p>
+            Ajukan pertanyaan di kolom diskusi atau ikuti sesi live mingguan bersama mentor.
+          </p>
+        </details>
+        <details>
+          <summary>
+            Apakah sekolah bisa memakainya?
+          </summary>
+          <p>
+            Tentu. Guru dan siswa bisa memakai semua materi di kelas.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">
+          Blog
+        </span>
+        <h2>
+          Artikel & Tips Belajar
+        </h2>
+        <p>
+          Inspirasi terbaru untuk perjalanan belajarmu.
+        </p>
+      </div>
+      <div class="grid-3">
+        <article class="post">
+          <div class="body">
+            <span class="tag">
+              Studi
+            </span>
+            <h3>
+              7 Teknik Belajar yang Terbukti Efektif
+            </h3>
+            <p>
+              Dari active recall hingga spaced repetition, ini cara belajar lebih cepat.
+            </p>
+            <a href="#" class="more">
+              Baca selengkapnya →
+            </a>
+          </div>
+        </article>
+        <article class="post">
+          <div class="body">
+            <span class="tag">
+              Karier
+            </span>
+            <h3>
+              Skill Paling Dicari Tahun Depan
+            </h3>
+            <p>
+              Analisis data, komunikasi, dan literasi AI masuk daftar teratas.
+            </p>
+            <a href="#" class="more">
+              Baca selengkapnya →
+            </a>
+          </div>
+        </article>
+        <article class="post">
+          <div class="body">
+            <span class="tag">
+              Tips
+            </span>
+            <h3>
+              Cara Menyusun Jadwal Belajar Realistis
+            </h3>
+            <p>
+              Mulai dari 25 menit sehari dan bangun kebiasaan secara bertahap.
+            </p>
+            <a href="#" class="more">
+              Baca selengkapnya →
+            </a>
+          </div>
+        </article>
+        <article class="post">
+          <div class="body">
+            <span class="tag">
+              Ujian
+            </span>
+            <h3>
+              Strategi Mengerjakan UTBK dalam Waktu Terbatas
+            </h3>
+            <p>
+              Atur prioritas soal dan kelola waktu per subtes.
+            </p>
+            <a href="#" class="more">
+              Baca selengkapnya →
+            </a>
+          </div>
+        </article>
+        <article class="post">
+          <div class="body">
+            <span class="tag">
+              Teknologi
+            </span>
+            <h3>
+              Belajar Coding Tanpa Latar Belakang IT
+            </h3>
+            <p>
+              Roadmap enam bulan untuk pemula dari nol.
+            </p>
+            <a href="#" class="more">
+              Baca selengkapnya →
+            </a>
+          </div>
+        </article>
+        <article class="post">
+          <div class="body">
+            <span class="tag">
+              Motivasi
+            </span>
+            <h3>
+              Mengatasi Rasa Malas Saat Belajar Mandiri
+            </h3>
+            <p>
+              Trik kecil agar tetap konsisten dan tidak mudah menyerah.
+            </p>
+            <a href="#" class="more">
+              Baca selengkapnya →
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="container">
+      <h2>
+        Dapatkan Tips Belajar Mingguan
+      </h2>
+      <p>
+        Gabung dengan 100.000+ pelajar dan terima materi pilihan di email kamu.
+      </p>
+      <div class="nl" id="newsForm">
+        <input type="email" id="email" placeholder="Alamat email kamu">
+        <button type="button" class="btn" id="newsBtn">
+          Berlangganan
+        </button>
+      </div>
+      <p id="formMsg">
+      </p>
+    </div>
+  </section>
+
+  <footer class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="logo">Edu<span>Smart</span></div>
+        <p>
+          Platform belajar online untuk semua. Belajar cerdas, tumbuh bersama.
+        </p>
+        <p>
+          📍 Jakarta, Indonesia
+        </p>
+        <p>
+          ✉️ halo@edusmart.com
+        </p>
+      </div>
+      <div>
+        <h4>
+          Produk
+        </h4>
+        <ul>
+          <li>
+            <a href="#">
+              Kursus
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Try Out
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Tutor AI
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Untuk Sekolah
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Aplikasi Mobile
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4>
+          Perusahaan
+        </h4>
+        <ul>
+          <li>
+            <a href="#">
+              Tentang Kami
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Karier
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Blog
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Press Kit
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Mitra
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4>
+          Bantuan
+        </h4>
+        <ul>
+          <li>
+            <a href="#">
+              Pusat Bantuan
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Hubungi Kami
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Kebijakan Privasi
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Syarat & Ketentuan
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4>
+          Sumber Daya
+        </h4>
+        <ul>
+          <li>
+            <a href="#">
+              Panduan Belajar
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Webinar
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Komunitas
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Beasiswa
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">
+      © 2026 EduSmart.com. Seluruh hak cipta dilindungi.
+    </p>
+  </footer>
+
+  <div class="modal" id="authModal">
+    <div class="modal-box">
+      <button class="close" id="authClose" aria-label="Tutup">
+        ✕
+      </button>
+      <h2 id="authTitle">
+        Selamat Datang 👋
+      </h2>
+      <div class="tabs">
+        <button class="on" data-tab="login" type="button">
+          Masuk
+        </button>
+        <button data-tab="register" type="button">
+          Daftar
+        </button>
+      </div>
+      <div id="authForm">
+        <div id="nameRow" style="display:none">
+          <label for="aName">
+            Nama lengkap
+          </label>
+          <input type="text" id="aName" placeholder="Nama kamu" autocomplete="name">
+        </div>
+        <label for="aEmail">
+          Email
+        </label>
+        <input type="email" id="aEmail" placeholder="email@contoh.com" autocomplete="username">
+        <label for="aPass">
+          Kata sandi
+        </label>
+        <p class="hint" id="passHint">
+          Minimal 8 karakter, campuran huruf dan angka (mengikuti standar kata sandi Google).
+        </p>
+        <div class="pass-wrap">
+          <input type="password" id="aPass" placeholder="Minimal 8 karakter" autocomplete="current-password">
+          <button type="button" class="eye" id="eyeBtn" aria-label="Lihat kata sandi">
+            👁️
+          </button>
+        </div>
+        <p id="capsWarn" style="display:none">
+          ⚠️ Caps Lock aktif
+        </p>
+        <button type="button" class="btn block" id="authSubmit">
+          Masuk
+        </button>
+        <p id="authMsg">
+        </p>
+      </div>
+      <p class="note" id="authNote">
+        Akun ini khusus untuk EduSmart. Jangan gunakan kata sandi Gmail atau akun lain di sini. Data disimpan di browser ini saja.
+      </p>
+    </div>
+  </div>
+
+  <div class="modal" id="courseModal">
+    <div class="modal-box cm-box">
+      <button class="close" id="courseClose" aria-label="Tutup">
+        ✕
+      </button>
+      <div class="cm-head">
+        <span class="thumb" id="cmEmoji" style="font-size:2.4rem;height:auto;background:none;display:inline">
+          
+        </span>
+        <h2 id="cmTitle">
+          
+        </h2>
+      </div>
+      <p id="cmDesc" class="cm-desc">
+        
+      </p>
+      <div class="tabs">
+        <button class="on" data-cmtab="materi" type="button">
+          📘 Materi
+        </button>
+        <button data-cmtab="kuis" type="button">
+          📝 Kuis
+        </button>
+      </div>
+      <div id="cmPanelMateri">
+        <div class="progress" id="cmProgressWrap">
+          <i id="cmBar">
+          </i>
+        </div>
+        <p id="cmPct" class="cm-pct">
+          
+        </p>
+        <ul id="cmModules" class="cm-modules">
+        </ul>
+        <button class="btn ghost small block" id="cmDownload" type="button">
+          📥 Unduh Materi Lengkap (.html)
+        </button>
+      </div>
+      <div id="cmPanelKuis" style="display:none">
+        <div id="cmQuizBody">
+        </div>
+        <p id="cmQuizMsg" class="cm-pct">
+          
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <button id="toTop" aria-label="Kembali ke atas">
+    ↑
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
